@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #fff6ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  padding: 16px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 12px;
+}
+
+#card-container {
+  position: relative;
+  height: 420px;
+  margin-bottom: 20px;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.label {
+  position: absolute;
+  top: 20px;
+  font-size: 42px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.like {
+  left: 20px;
+}
+
+.dislike {
+  right: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  font-size: 28px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+.hidden {
+  display: none;
+}
+
+#liked-list img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 6px;
+}
